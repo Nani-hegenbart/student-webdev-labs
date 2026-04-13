@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,78 @@
   </head>
   <body>
     <main>
-      <!-- Add your code here -->
+      <h1>Roth IRA Calculator</h1>
+
+      <form>
+        <div>
+          <label for="balance">Balance ($)</label><br />
+          <input type="number" id="balance" name="balance" />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="annual-contribution">Annual contribution ($)</label><br />
+          <input
+            type="number"
+            id="annual-contribution"
+            name="annual-contribution"
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <p>Maximize contributions?</p>
+          <input type="radio" id="yes" name="maximize" value="yes" />
+          <label for="yes">Yes</label>
+
+          <input type="radio" id="no" name="maximize" value="no" />
+          <label for="no">No</label>
+        </div>
+
+        <br />
+
+        <div>
+          <label for="rate">Expected rate of return (%)</label><br />
+          <input type="number" id="rate" name="rate" />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="current-age">Current age</label><br />
+          <input type="number" id="current-age" name="current-age" />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="retirement-age">Retirement age</label><br />
+          <input type="number" id="retirement-age" name="retirement-age" />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="tax-rate">Marginal tax rate (%)</label><br />
+          <input type="number" id="tax-rate" name="tax-rate" />
+        </div>
+
+        <br />
+
+        <div>
+          <button type="submit">Calculate</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+
+      <p>
+        This exercise is a simplified version of the Roth IRA Calculator at
+        <a href="https://www.calculator.net/roth-ira-calculator.html"
+          >Calculator.net</a
+        >
+      </p>
     </main>
   </body>
 </html>
