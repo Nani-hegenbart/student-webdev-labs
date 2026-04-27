@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,13 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Exercise 02 - Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="form-page">
     <main>
-      <!-- Start with the code from the HTML folder.
-      - Make sure to fix any issues in your HTML code.
-      - Delete all mentions of <br>s and style the line breaks with CSS. 
-      - Add classes to style the elements on the page. -->
+      <form class="calculator">
+        <h1>Roth IRA Calculator</h1>
+      
+        <div class="form-row">
+          <label>Balance ($)</label>
+          <input type="number" />
+        </div>
+      
+        <div class="form-row">
+          <label>Annual contribution ($)</label>
+          <input type="number" />
+        </div>
+      
+        <div class="form-row">
+          <label>Maximize contribution?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="max" /> Yes</label>
+            <label><input type="radio" name="max" /> No</label>
+          </div>
+        </div>
+      
+        <div class="form-row">
+          <label>Expected rate of return (%)</label>
+          <input type="number" />
+        </div>
+      
+        <div class="form-row">
+          <label>Current age</label>
+          <input type="number" />
+        </div>
+      
+        <div class="form-row">
+          <label>Retirement age</label>
+          <input type="number" />
+        </div>
+      
+        <div class="form-row">
+          <label>Marginal tax rate (%)</label>
+          <input type="number" />
+        </div>
+      
+        <div class="buttons">
+          <button type="submit">Calculate</button>
+          <button type="reset">Reset</button>
+        </div>
+      
+        <p class="note">
+          This exercise is a simplified version of the Roth IRA Calculator at
+          <a href="#">Calculator.net</a>
+        </p>
+      </form>
     </main>
   </body>
 </html>
